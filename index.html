@@ -365,20 +365,23 @@
             </li>
           </ul>
         </div>
-        <div class="subscribe__container">
-          <strong class="subscribe__strong">Підпишіться на розсилку</strong>
-          <form class="subscribe__form"><input class="subscribe__input" type="email" placeholder="E-mail">
-            <button type="submit" class="subscribe__button button">Підписатися
-              <svg height="24" width="24" class="button__subscribe__icon">
-                <use href="./images/icons.svg#send-icon"></use>
-              </svg>
-            </button>
+        <div class="subscription">
+          <form class="subscribe__form">
+            <strong class="subscribe__title">Підпишіться на розсилку</strong>
+            <label class="subscribe__label">
+              <input class="subscribe__input" type="email" placeholder="E-mail">
+              <button type="submit" class="subscribe__button button">Підписатися
+                <svg height="24" width="24" class="button__subscribe__icon">
+                  <use href="./images/icons.svg#send-icon"></use>
+                </svg>
+              </button>
+            </label>
           </form>
         </div>
+
       </div>
     </div>
   </footer>
-
 
   <div class=" backdrop is-hidden" data-modal>
     <div class="modal__window">
@@ -387,39 +390,41 @@
           <use class="close__button__use" href="./images/icons.svg#button-close"></use>
         </svg>
       </button>
-      <p class="modal__title">Залишіть свої дані, ми вам передзвонимо</p>
+
       <form class="form">
-        <div class="form__inputs" role="group">
-          <div class="form__item"><label for="form__name" class="form__label">Ім'я</label>
+        <p class="modal__title">Залишіть свої дані, ми вам передзвонимо</p>
+        <div class="form__item">
+          <label class="form__label">Ім'я
             <div class="form__contact">
-              <input type="text" class="form__input form__name" id="form__name">
-              <svg class="form__icon" width="18" height="18">
+              <input type="text" class="form__input form__name">
+              <svg class="form__icon" width="12" height="12">
                 <use href="./images/icons.svg#form-name"></use>
               </svg>
             </div>
-          </div>
-          <div class="form__item"><label for="form__tel" class="form__label">Телефон</label>
-            <div class="form__contact">
-              <input type="tel" class="form__input form__tel" id="form__tel">
-              <svg class="form__icon" width="18" height="18">
+          </label>
+        </div>
+        <div class="form__item"><label class="form__label">Телефон<div class="form__contact">
+              <input type="tel" class="form__input form__tel">
+              <svg class="form__icon" width="13" height="13">
                 <use href="./images/icons.svg#form-tel"></use>
               </svg>
             </div>
-          </div>
-          <div class="form__item">
-            <label for="form__mail" class="form__label"> Пошта</label>
+          </label>
+        </div>
+        <div class="form__item">
+          <label class="form__label"> Пошта
             <div class="form__contact">
-              <input type="email" class="form__input form__mail" id="form__mail">
-              <svg class="form__icon" width="18" height="18">
+              <input type="email" class="form__input form__mail">
+              <svg class="form__icon" width="15" height="12">
                 <use href="./images/icons.svg#form-mail"></use>
               </svg>
             </div>
-          </div>
-          <div class="form__item">
-            <label for="form__comment" class="form__label">Коментар</label>
-            <textarea name="form__comment__area" class="form__comment__area" rows="5" id="form__comment"
-              placeholder="Введіть текст"></textarea>
-          </div>
+          </label>
+        </div>
+        <div class="form__item">
+          <label for="form__comment" class="form__label">Коментар</label>
+          <textarea name="form__comment__area" class="form__comment__area" rows="5" id="form__comment"
+            placeholder="Введіть текст"></textarea>
         </div>
         <div class="form__checkbox">
           <input class="form__checkbox__input visually-hidden" type="checkbox" name="sign" id="sign" value="accepted">
@@ -427,12 +432,14 @@
             приймаю <a class="agreement-link" href="">Умови
               договору</a></label>
         </div>
+        <button class="button form__button" type="submit">Відправити</button>
       </form>
-      <button class="button form__button" type="submit">Відправити</button>
 
     </div>
-
   </div>
+
+
+
   <script src="./js/modal.js"></script>
 
 </body>
