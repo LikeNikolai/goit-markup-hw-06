@@ -246,6 +246,8 @@ img {
 .footer__div {
   display: flex;
   align-items: baseline;
+
+
 }
 
 .footer__container {
@@ -253,7 +255,7 @@ img {
   flex-direction: column;
 }
 
-.footer-logo-address {}
+
 
 .logo__footer {
   display: block;
@@ -343,16 +345,11 @@ img {
 
 /*------------------- SUBSCRIPTION------------------- */
 .subscription {
-  display: flex;
-  flex-wrap: wrap;
   margin-left: auto;
+
 }
 
 .subscribe__form {
-  flex-grow: 1;
-}
-
-.subscribe__label {
   display: flex;
 }
 
@@ -404,7 +401,7 @@ img {
   padding: 3px 0px;
 }
 
-/* Hero */
+/*------------------------ Hero-------------------- */
 .hero {
   background-color: #2f303a;
 }
