@@ -94,14 +94,14 @@ img {
   background-color: var(--active-color);
 }
 
+/* -------------------------HEADER--------------------- */
 
 .header-container {
   display: flex;
   align-items: center;
-
 }
 
-/* Logo */
+/* ----------------------------LOGO-------------------- */
 .logo {
   color: var(--active-color);
   font-family: "Raleway";
@@ -117,7 +117,7 @@ img {
   padding-bottom: 25px;
 }
 
-.logo__header__deco {
+.logo__header_deco {
   color: var(--maintext-color);
 }
 
@@ -129,7 +129,7 @@ img {
   color: var(--background-color);
 }
 
-/* Navigation */
+/* -----------------NAVIGATION------------------- */
 
 .nav__items {
   display: flex;
@@ -214,7 +214,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav__contact__svg {
+.nav__svg {
   margin-right: 10px;
   fill: var(--additionaltext-color);
 
@@ -226,8 +226,8 @@ img {
   color: var(--active-color);
 }
 
-.nav__contact__link:focus .nav__contact__svg,
-.nav__contact__link:hover .nav__contact__svg {
+.nav__contact__link:focus .nav__svg,
+.nav__contact__link:hover .nav__svg {
   fill: var(--active-color);
 }
 
@@ -236,7 +236,7 @@ img {
   line-height: 1.71;
 }
 
-/* Footer */
+/* ----------------------FOOTER------------------------------ */
 .footer {
   background-color: var(--footer-color);
   padding-top: 60px;
@@ -246,16 +246,12 @@ img {
 .footer__div {
   display: flex;
   align-items: baseline;
-
-
 }
 
 .footer__container {
   display: flex;
   flex-direction: column;
 }
-
-
 
 .logo__footer {
   display: block;
@@ -285,7 +281,6 @@ img {
   color: var(--active-color);
   text-shadow: 0px 4px 4px #00000040;
 }
-
 
 .footer__contact:not(:last-child) {
   margin-bottom: 9px;
@@ -342,15 +337,11 @@ img {
   fill: var(--background-color);
 }
 
-
 /*------------------- SUBSCRIPTION------------------- */
-.subscription {
+/* .subscription {} */
+
+.subscribe {
   margin-left: auto;
-
-}
-
-.subscribe__form {
-  display: flex;
 }
 
 .subscribe__title {
@@ -363,6 +354,10 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--background-color);
+}
+
+.subscribe__field {
+  display: flex;
 }
 
 .subscribe__input {
@@ -440,8 +435,8 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding: 10px 30px;
-  line-height: 1.875;
 
+  line-height: 1.875;
   min-width: 200px;
   min-height: 50px;
   border-radius: 4px;
@@ -458,26 +453,26 @@ img {
 }
 
 /* QUALITIES */
-.qualities__title {
+.quality__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
 
-.qualities__list {
+.qualities-list {
   display: flex;
 }
 
-.qualities__item {
+.quality {
   width: 270px;
 }
 
-.qualities__item:not(:last-child) {
+.quality:not(:last-child) {
   margin-right: 30px;
 }
 
-.qulities__icon__container {
+.quality__icon-container {
   margin-bottom: 30px;
   display: flex;
   align-items: center;
@@ -487,17 +482,18 @@ img {
   background-color: var(--teams-background-color);
 }
 
-.qualities__title {
+.quality__title {
   margin-bottom: 10px;
 }
 
-.qualities__descr {
+.quality__descr {
   color: var(--additionaltext-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
 
+/* -------------------WORKS------------------ */
 .works {
   padding-top: 0;
 }
@@ -525,7 +521,6 @@ img {
   display: flex;
   justify-content: center;
   text-align: center;
-
 }
 
 .works__desc {
@@ -535,6 +530,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+
   background-color: #2F303ACC;
   width: 370px;
   height: 70px;
@@ -546,16 +542,14 @@ img {
   color: #FFFFFF;
 }
 
-
 /* -----------------------TEAM--------------------------- */
 .team {
   background-color: var(--teams-background-color);
 }
 
-.team__member {
+.team-member {
   background-color: var(--background-color);
   box-shadow: 0px 4px 4px 0px #00000040;
-
 }
 
 .team__title {
@@ -566,18 +560,17 @@ img {
   margin-bottom: 50px;
 }
 
-.team__member:not(:last-child) {
+.team-member:not(:last-child) {
   margin-right: 30px;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
-
 }
 
 .team__list {
   display: flex;
 }
 
-.team__member__container {
+.team-member__container {
   min-height: 168px;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -586,7 +579,7 @@ img {
 }
 
 
-.team__name {
+.team-member__name {
   font-weight: 500;
   font-size: 16px;
   text-align: center;
@@ -594,7 +587,7 @@ img {
   margin-bottom: 10px;
 }
 
-.team__job {
+.team-member__job {
   color: var(--additionaltext-color);
   font-weight: 400;
   font-size: 16px;
@@ -607,7 +600,7 @@ img {
   display: block;
 }
 
-.team__member__link {
+.team-member__link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -618,43 +611,40 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team__member__link__svg {
-
+.team-member__svg {
   fill: #AFB1B8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.team__member__contact:hover .team__member__link__svg,
-.team__member__contact:focus .team__member__link__svg {
+.team-member__contact:hover .team-member__svg,
+.team-member__contact:focus .team-member__svg {
   fill: var(--background-color);
 }
 
-.team__member__link:hover,
-.team__member__link:focus {
+.team-member__link:hover,
+.team-member__link:focus {
   background-color: var(--active-color);
-
 }
 
-.team__member__link:hover .team__member__link__svg,
-.team__member__link:focus .team__member__link__svg {
+.team-member__link:hover .team-member__svg,
+.team-member__link:focus .team-member__svg {
   fill: var(--background-color);
 }
 
-.team__member__contacts {
+.team-member__contacts {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
-.team__member__contact {
+.team-member__contact {
   border-radius: 50%;
   margin-left: 10px;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team__member__contact:first-child {
+.team-member__contact:first-child {
   margin-left: 0px;
 }
 
@@ -722,13 +712,6 @@ img {
   border-top: #ECECEC 1px solid;
 }
 
-.cards__button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-}
-
 .portfolio__buttons {
   display: flex;
   justify-content: center;
@@ -766,7 +749,6 @@ img {
 .cards {
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .card {
